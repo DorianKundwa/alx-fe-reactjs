@@ -3,6 +3,7 @@ import './App.css'
 import RecipeList from './components/RecipeList'
 import AddRecipeForm from './components/AddRecipeForm'
 import RecipeDetails from './components/RecipeDetails'
+import SearchBar from './components/SearchBar'
 import { useRecipeStore } from './components/recipeStore'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
@@ -23,6 +24,7 @@ function App() {
         <Routes>
           <Route path="/" element={
             <>
+              <SearchBar />
               <AddRecipeForm />
               <RecipeList />
             </>
