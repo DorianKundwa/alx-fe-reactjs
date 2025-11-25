@@ -1,6 +1,6 @@
 import './App.css'
 import ProfilePage from './ProfilePage'
-import UserContext from './UserContext'
+import { UserContext } from './UserContext'
 import UserProfile from './UserProfile'
 
 function App() {
