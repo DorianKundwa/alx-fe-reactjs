@@ -15,6 +15,7 @@ function RecipeDetails({ recipeId: propId }) {
   return (
     <div style={{ padding: '20px' }}>
       <h1>{recipe.title}</h1>
+      <p>ID: {recipe.id}</p>
       <p>{recipe.description}</p>
       <EditRecipeForm recipeId={id} />
       <DeleteRecipeButton recipeId={id} />
