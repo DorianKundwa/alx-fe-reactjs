@@ -12,8 +12,8 @@ function EditRecipeForm({ recipeId: propId }) {
   const navigate = useNavigate()
 
 
-  const handleSubmit = (e) => {
-    e.preventDefault()
+  const handleSubmit = (event) => {
+    event.preventDefault()
     updateRecipe({ id, title, description })
     navigate('/')
   }
